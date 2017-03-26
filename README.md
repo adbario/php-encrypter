@@ -49,7 +49,7 @@ $string = 'This is my string to encrypt.';
 $encrypted = $encrypter->encryptString($string);
 ```
 
-Encrypt other variable types:
+Encrypt other variable types with serialization:
 
 ```php
 $array = array('key' => 'value');
@@ -64,7 +64,7 @@ Decrypt a string:
 $string = $encrypter->decryptString($encrypted);
 ```
 
-Decrypt other variable types:
+Decrypt other variable types with serialization:
 
 ```php
 $array = $encrypter->decrypt($encrypted);
