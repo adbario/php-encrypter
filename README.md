@@ -22,7 +22,7 @@ composer require adbario/php-encrypter
 
 Setup the encryption key:
 
-```
+```php
 $key = '+NeXrQhAEhW}g8gf^y)Up8hAUKpue7wb';
 ```
 
@@ -30,13 +30,13 @@ $key = '+NeXrQhAEhW}g8gf^y)Up8hAUKpue7wb';
 
 Create a new encrypter instance:
 
-```
+```php
 $encrypter = new \Adbar\Encrypter($key);
 ```
 
-If you wish to use different key for hashing, you can pass it to constructor as a second parameter:
+If you wish to use a different key for hashing, you can pass it to constructor as a second parameter:
 
-```
+```php
 $encrypter = new \Adbar\Encrypter($key, $authKey);
 ```
 
@@ -44,14 +44,14 @@ $encrypter = new \Adbar\Encrypter($key, $authKey);
 
 Encrypt a string:
 
-```
+```php
 $string = 'This is my string to encrypt.';
 $encrypted = $encrypter->encryptString($string);
 ```
 
 Encrypt other variable types:
 
-```
+```php
 $array = array('key' => 'value');
 $encrypted = $encrypter->encrypt($array);
 ```
@@ -60,13 +60,13 @@ $encrypted = $encrypter->encrypt($array);
 
 Decrypt a string:
 
-```
+```php
 $string = $encrypter->decryptString($encrypted);
 ```
 
 Decrypt other variable types:
 
-```
+```php
 $array = $encrypter->decrypt($encrypted);
 ```
 
