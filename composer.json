@@ -1,0 +1,24 @@
+{
+    "name": "adbario/php-encrypter",
+    "description": "Encryption with AES-256 and HMAC-SHA256",
+    "keywords": ["encryption", "security"],
+    "homepage": "https://github.com/adbario/php-encrypter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Riku Särkinen",
+            "email": "riku@adbar.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Adbar\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.3",
+        "paragonie/random_compat": "^2.0",
+        "ext-openssl": "*",
+        "ext-mbstring": "*"
+    }
+}
