@@ -18,7 +18,7 @@ composer require adbario/php-encrypter
 #### Manual installation:
 1. Download the latest release
 2. Extract the files into your project
-3. Require "/path/to/php-encrypter/src/Encrypter.php";
+3. require_once '/path/to/php-encrypter/src/Encrypter.php';
 4. If your PHP version is lower than 7, also [polyfill for random_bytes()](https://github.com/paragonie/random_compat) is required
 
 ## Usage
