@@ -4,6 +4,9 @@ This project encrypts and decrypts the given value. It uses OpenSSL extension wi
 
 PHP Encrypter requires PHP 5.3 or higher, OpenSSL and Multibyte String extensions.
 
+### Security Notice
+As a reversible operation, encryption is not a secure solution for storing passwords. Always use hashing with salt per user for passwords.
+
 ## Installation
 
 #### With [Composer](https://getcomposer.org/):
